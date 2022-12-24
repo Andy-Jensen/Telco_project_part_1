@@ -1,8 +1,8 @@
 # Where are my customers going?!?!?!
-# A Telco customer churn analysis
+## A Telco customer churn analysis
 
 # Project:
-# Your mission, should you choose to accept it, is to analyze the telco_churn dataset and predict why customers are churning. Provide predictions for a group of customers. This will allow "Telco" to make a change and retain customers at a higher rate. 
+## Your mission, should you choose to accept it, is to analyze the telco_churn dataset and predict why customers are churning. Provide predictions for a group of customers. This will allow "Telco" to make a change and retain customers at a higher rate. 
 
 # Project Goal:
 # This project sets out to exercise the data science pipeline on a basic level. This can be applied in personal projects and assignments from employers to help deliver a quality product that delivers some value to the individual, community, or company.
