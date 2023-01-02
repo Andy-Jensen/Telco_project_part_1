@@ -1,22 +1,41 @@
 # Where are my customers going?!?!?!
 # A Telco customer churn analysis
 
-# Project:
-our mission, should you choose to accept it, is to analyze the telco_churn dataset and predict why customers are churning. Provide predictions for a group of customers. This will allow "Telco" to make a change and retain customers at a higher rate. 
+# Project Description:
+The telecommunication industry is massive generating greater than 1.7 billion dollars in 2021 and is expected to almost double by 2028. Companies are constantly looking at customer retention (churn) in order to glean as much as possible from this billion dollar industry. Determining wether a customer will churn or not allows a business to make changes in an attempt to retain their customers. Using the telco_churn dataset, I will identify drivers and determine how they relate to customer churn at the company and hypothisize how to reduce their customer churn.
 
-# Project Goal:
-This project sets out to exercise the data science pipeline on a basic level. This can be applied in personal projects and assignments from employers to help deliver a quality product that delivers some value to the individual, community, or company.
+# Project Goals:
+* Get more comfortable using the datascience pipeline
+* Find drivers for customer churn at Telco. Why are customers churning?
+* Use the drivers identified in exploration to develop a machine learning classification model to accurately predict customer churn
+* This information will be used to generate a final report, that a non-data scientist can read, to advise Telco on potential solutions to reduce customer churn, identify the steps taken and why, and document final outcomes and takeaways
 
 # Initial Hypothesis:
-I have minimally explored this dataset and my initial hypothisis is that churn is due to the price associated with the long term payment plans.
+I have minimally explored this dataset and my initial hypothisis is that churn is due to the cost associated with services, resulting in a higher monthly payment and concequently higher total payments.
 
-# Project Plan Guides:
-Planning for the project to identify the MVP and deliverables associated with the steps will occur first.
-### -Data acquisition is partly done. The data has been collected and put into a SQL database. I will still need to querey the data to acquire the necessary information for the project.
-### -Preperation will be done on the data to ensure that the data is clean and ready for exploration and manipulation.
-### -After the data is prepared, I will explore the data to isolate a group of customers and identify drivers for that specific group of customers.
-### -Once exploration is complete, I will generate models and visualize the results of the findings. I will make models, fit them, and predict results. information will be visualized with graphs/charts.
-### -Delivery will take place in the form of a final presentation. I will present the results infront of my class as though I am giving a presentation to my direct manager and their manager.
+# Project Plan:
+
+* Acquire the data from the Codeup SQL server
+
+* Prepare data
+  *
+
+ 
+* Explore data in search of drivers of churn
+   * Answer the following initial questions
+       * Does higher monthly charges cause churn?
+       * Does a higher number of services cause customers to churn more or less?
+       * Does having DSL cause customers to churn more or less?
+       * Are customers with a lower tenure more or less likely to churn?
+       * Is there a service that is associated with more churn than expected?
+      
+* Develop a model to predict if a customer will churn or not
+   * Use drivers identified in explore to build predictive models of different types
+   * Evaluate models on train and validate data
+   * Select the best model based on highest accuracy
+   * Evaluate the best model on test data
+ 
+* Draw conclusions
 
 # Data Dictionary:
 ### -Column names and descriptions here.
