@@ -11,7 +11,7 @@ The telecommunication industry is massive generating greater than 1.7 billion do
 * This information will be used to generate a final report, that a non-data scientist can read, to advise Telco on potential solutions to reduce customer churn, identify the steps taken and why, and document final outcomes and takeaways
 
 # Initial Hypothesis:
-I have minimally explored this dataset and my initial hypothisis is that churn is due to the cost associated with services, resulting in a higher monthly payment and concequently higher total payments.
+I have minimally explored this dataset and my initial hypothisis is that churn is related to monthly charges.
 
 # Project Plan:
 
@@ -45,10 +45,11 @@ I have minimally explored this dataset and my initial hypothisis is that churn i
 * Explore the train data in search of drivers of churn
    * Answer the following initial questions
        * Does higher monthly charges cause churn?
-       * Does a higher number of services cause customers to churn more or less?
+       * Does wether customers have dependents cause them to churn more or less?
        * Does having DSL cause customers to churn more or less?
        * Are customers with a lower tenure more or less likely to churn?
-       * Is there a service that is associated with more churn than expected?
+       * Is internet service causing churn?
+       * Is no online security causing churn?
       
 * Develop a model to predict if a customer will churn or not
    * Use drivers identified in explore to build predictive models of different types
