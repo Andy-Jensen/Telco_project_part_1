@@ -18,7 +18,9 @@ I have minimally explored this dataset and my initial hypothisis is that churn i
 * Acquire the data from the Codeup SQL server
 
 * Prepare data
-  *
+   * Drop columns
+       * customer_id
+       * contract_id
 
  
 * Explore data in search of drivers of churn
