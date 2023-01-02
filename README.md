@@ -20,7 +20,25 @@ I have minimally explored this dataset and my initial hypothisis is that churn i
 * Prepare data
    * Drop columns
        * customer_id
-       * contract_id
+       * contract_type_id
+       * payment_type_id
+       * internet_service_type_id
+   * Get dummies
+       * gender
+       * dependents
+       * partner
+       * phone_service
+       * multiple_lines
+       * online_security
+       * online_backup
+       * device_protection
+       * tech_support
+       * streaming_tv
+       * streaming_movies
+       * paperless_billing
+       * contract_type
+       * internet_service_type
+       * payment_type
 
  
 * Explore data in search of drivers of churn
