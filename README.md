@@ -40,6 +40,7 @@ I have minimally explored this dataset and my initial hypothisis is that churn i
        * internet_service_type
        * payment_type
 
+* Separate into train, validate, and test datasets
  
 * Explore data in search of drivers of churn
    * Answer the following initial questions
