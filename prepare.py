@@ -1,5 +1,9 @@
 from sklearn.model_selection import train_test_split
 from sklearn.impute import SimpleImputer
+import acquire
+import pandas as pd
+import numpy as np
+
 
 #function for doing train test split on any dataset
 def tts(df):
@@ -22,3 +26,23 @@ def tts(df):
                                       random_state=8675309, 
                                       stratify=train_validate[x])
     return train, validate, test
+
+
+def prep_telco():
+    telco=acquire.get_telco_data()
+    '''
+    dropping unnecessary columns
+    '''
+    telco.drop(columns=(['customer_id', 'contract_type_id', 'payment_type_id', 
+                         'internet_service_type_id']), inplace=True)
+    '''
+    adding dummies for modeling
+    '''
+    dummy_var=(pd.get_dummies(telco[['gender', 'partner', 'dependents', 'phone_service', 
+                                    'multiple_lines', 'online_security', 'online_backup', 
+                                    'device_protection', 'tech_support', 'streaming_tv', 
+                                    'streaming_movies', 'paperless_billing', 
+                                    'contract_type', 'internet_service_type', 
+                                    'payment_type']], drop_first=True))
+    telco=pd.concat([telco, dummy_var], axis=1)
+    return telco
