@@ -33,8 +33,12 @@ def prep_telco():
     '''
     dropping unnecessary columns
     '''
-    telco.drop(columns=(['customer_id', 'contract_type_id', 'payment_type_id', 
+    telco.drop(columns=(['contract_type_id', 'payment_type_id', 
                          'internet_service_type_id']), inplace=True)
+    '''
+    setting the customer ids to the index and dropping the column
+    '''
+    telco= telco.set_index('customer_id')
     '''
     adding dummies for modeling
     '''
