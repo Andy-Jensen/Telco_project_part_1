@@ -87,4 +87,7 @@ I have minimally explored this dataset and my initial hypothisis is that churn i
 |churn_month| month that the customer left Telco. 'None' if the customer is still enrolled|
 
 # Steps to Reproduce
-### -instructions for reproducing your work. i.e. Running your notebook on someone else's computer.
+1. Clone this repo
+2. Use the function from acquire and prepare to obtain the data from the Codeup SQL server using the programmed query
+3. Run the explore and modeling notebook
+4. Run final report notebook
